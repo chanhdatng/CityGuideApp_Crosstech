@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TraveloguesList" id="gTV-IL-0wX" customClass="TraveloguesList" customModule="CityGuideApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5DM-88-BL1">
+                        <rect key="frame" x="5" y="5" width="295" height="190"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgPhanThiet" translatesAutoresizingMaskIntoConstraints="NO" id="ozn-KE-zIz">
+                                <rect key="frame" x="0.0" y="0.0" width="295" height="190"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fN8-Jr-qPG">
+                                <rect key="frame" x="0.0" y="150" width="295" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Journey Through the Sahara" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBt-Sg-rAP">
+                                        <rect key="frame" x="41.5" y="10" width="212.5" height="20"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <constraints>
+                                    <constraint firstItem="yBt-Sg-rAP" firstAttribute="centerX" secondItem="fN8-Jr-qPG" secondAttribute="centerX" id="Dfr-II-Nwj"/>
+                                    <constraint firstAttribute="height" constant="40" id="GYt-V5-Ddq"/>
+                                    <constraint firstItem="yBt-Sg-rAP" firstAttribute="centerY" secondItem="fN8-Jr-qPG" secondAttribute="centerY" id="NiZ-RE-Ehu"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fN8-Jr-qPG" firstAttribute="leading" secondItem="5DM-88-BL1" secondAttribute="leading" id="1WD-Ya-29d"/>
+                            <constraint firstAttribute="trailing" secondItem="fN8-Jr-qPG" secondAttribute="trailing" id="NzO-9U-3I2"/>
+                            <constraint firstAttribute="trailing" secondItem="ozn-KE-zIz" secondAttribute="trailing" id="PbY-qp-78t"/>
+                            <constraint firstItem="ozn-KE-zIz" firstAttribute="top" secondItem="5DM-88-BL1" secondAttribute="top" id="QrY-vX-yOM"/>
+                            <constraint firstAttribute="bottom" secondItem="fN8-Jr-qPG" secondAttribute="bottom" id="Yb6-2L-vaZ"/>
+                            <constraint firstAttribute="bottom" secondItem="ozn-KE-zIz" secondAttribute="bottom" id="aN5-gQ-HWU"/>
+                            <constraint firstItem="ozn-KE-zIz" firstAttribute="leading" secondItem="5DM-88-BL1" secondAttribute="leading" id="hHe-mf-vvB"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="0.0" height="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="5DM-88-BL1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="KIu-Bl-MN7"/>
+                <constraint firstAttribute="trailing" secondItem="5DM-88-BL1" secondAttribute="trailing" id="ni8-Oi-mJS"/>
+                <constraint firstAttribute="bottom" secondItem="5DM-88-BL1" secondAttribute="bottom" constant="5" id="nob-LC-fp2"/>
+                <constraint firstItem="5DM-88-BL1" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="u4S-De-KcJ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="vContainer" destination="5DM-88-BL1" id="ocK-fL-F8l"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="imgPhanThiet" width="960" height="637"/>
+    </resources>
+</document>

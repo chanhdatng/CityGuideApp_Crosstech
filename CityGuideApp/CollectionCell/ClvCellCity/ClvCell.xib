@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ClvCell" customModule="CityGuideApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fPK-e2-grc">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aa9-WU-9s0">
+                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                            </imageView>
+                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="efi-Za-BgY">
+                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yUh-1x-a0H">
+                                <rect key="frame" x="0.0" y="50" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="YQo-85-0if"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="efi-Za-BgY" firstAttribute="top" secondItem="fPK-e2-grc" secondAttribute="top" id="1AD-oh-gNa"/>
+                            <constraint firstItem="yUh-1x-a0H" firstAttribute="centerY" secondItem="aa9-WU-9s0" secondAttribute="centerY" id="Fku-OZ-QXp"/>
+                            <constraint firstItem="aa9-WU-9s0" firstAttribute="top" secondItem="fPK-e2-grc" secondAttribute="top" id="P9Z-r5-FMG"/>
+                            <constraint firstItem="yUh-1x-a0H" firstAttribute="centerX" secondItem="aa9-WU-9s0" secondAttribute="centerX" id="Qm9-Bx-anC"/>
+                            <constraint firstItem="efi-Za-BgY" firstAttribute="leading" secondItem="fPK-e2-grc" secondAttribute="leading" id="VGW-2t-O5d"/>
+                            <constraint firstAttribute="bottom" secondItem="efi-Za-BgY" secondAttribute="bottom" id="WLC-Am-7oT"/>
+                            <constraint firstItem="yUh-1x-a0H" firstAttribute="leading" secondItem="fPK-e2-grc" secondAttribute="leading" id="b5A-iJ-NMM"/>
+                            <constraint firstAttribute="trailing" secondItem="efi-Za-BgY" secondAttribute="trailing" id="daG-AG-R4L"/>
+                            <constraint firstAttribute="bottom" secondItem="aa9-WU-9s0" secondAttribute="bottom" id="iHM-7O-Vzu"/>
+                            <constraint firstItem="aa9-WU-9s0" firstAttribute="leading" secondItem="fPK-e2-grc" secondAttribute="leading" id="nTA-hS-fNY"/>
+                            <constraint firstAttribute="trailing" secondItem="aa9-WU-9s0" secondAttribute="trailing" id="r0J-qS-75s"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="fPK-e2-grc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="8Ns-hI-6p6"/>
+                <constraint firstItem="fPK-e2-grc" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="b7e-eX-6Z2"/>
+                <constraint firstAttribute="trailing" secondItem="fPK-e2-grc" secondAttribute="trailing" id="hUJ-vn-UQo"/>
+                <constraint firstAttribute="bottom" secondItem="fPK-e2-grc" secondAttribute="bottom" id="yAR-Bg-K24"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="imgCity" destination="aa9-WU-9s0" id="njL-9N-EsU"/>
+                <outlet property="lblCityName" destination="yUh-1x-a0H" id="aCf-FD-CNo"/>
+                <outlet property="vBlur" destination="efi-Za-BgY" id="ZMe-vK-Hu5"/>
+                <outlet property="vContainer" destination="fPK-e2-grc" id="UPL-v5-hSJ"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="122.54464285714285"/>
+        </collectionViewCell>
+    </objects>
+</document>

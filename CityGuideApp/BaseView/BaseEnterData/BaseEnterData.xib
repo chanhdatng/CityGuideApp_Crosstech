@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-Regular.ttf">
+            <string>Ubuntu-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BaseEnterData" customModule="CityGuideApp" customModuleProvider="target">
+            <connections>
+                <outlet property="txfEnterData" destination="ar9-Mh-U66" id="qW7-VB-Jzy"/>
+                <outlet property="vContainer" destination="JsE-hF-gs7" id="cDP-Eq-MY5"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="55"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JsE-hF-gs7">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="55"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ar9-Mh-U66">
+                            <rect key="frame" x="20" y="0.0" width="374" height="55"/>
+                            <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="17"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="ar9-Mh-U66" secondAttribute="bottom" id="2gt-2a-7ap"/>
+                        <constraint firstAttribute="trailing" secondItem="ar9-Mh-U66" secondAttribute="trailing" constant="20" id="APr-HJ-jug"/>
+                        <constraint firstItem="ar9-Mh-U66" firstAttribute="top" secondItem="JsE-hF-gs7" secondAttribute="top" id="DfI-kN-rhR"/>
+                        <constraint firstItem="ar9-Mh-U66" firstAttribute="centerY" secondItem="JsE-hF-gs7" secondAttribute="centerY" id="ToO-3m-tGO"/>
+                        <constraint firstItem="ar9-Mh-U66" firstAttribute="leading" secondItem="JsE-hF-gs7" secondAttribute="leading" constant="20" id="ldi-W9-rGz"/>
+                        <constraint firstItem="ar9-Mh-U66" firstAttribute="centerX" secondItem="JsE-hF-gs7" secondAttribute="centerX" id="vag-ZR-DP4"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.20000000000000001"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.48148155212402344" green="0.56424909830093384" blue="0.28905871510505676" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="0.80000000000000004"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                            <size key="value" width="0.0" height="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="JsE-hF-gs7" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="YxN-dQ-qIh"/>
+                <constraint firstItem="JsE-hF-gs7" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="dhu-58-oCD"/>
+                <constraint firstItem="JsE-hF-gs7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="mkD-B1-JQ2"/>
+                <constraint firstAttribute="bottom" secondItem="JsE-hF-gs7" secondAttribute="bottom" id="qFx-zC-gji"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="47.826086956521742" y="35.825892857142854"/>
+        </view>
+    </objects>
+</document>

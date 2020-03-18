@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BaseHeaderPlace" customModule="CityGuideApp" customModuleProvider="target">
+            <connections>
+                <outlet property="bBack" destination="2Ns-bU-QlP" id="bRY-pz-CpZ"/>
+                <outlet property="bCheckin" destination="ND8-6B-fYe" id="ec0-y9-wl8"/>
+                <outlet property="bPin" destination="RwB-lW-JgS" id="a97-4l-HsP"/>
+                <outlet property="bReview" destination="Zee-tJ-Vjm" id="bUF-GD-Pjv"/>
+                <outlet property="bShare" destination="9Kh-63-5yb" id="lfx-rA-SyC"/>
+                <outlet property="vContainer" destination="9XX-b3-8fQ" id="rph-rm-8bJ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9XX-b3-8fQ">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Kh-63-5yb" customClass="BaseHeaderPlaceButton" customModule="CityGuideApp" customModuleProvider="target">
+                            <rect key="frame" x="331" y="0.0" width="83" height="50"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RwB-lW-JgS" customClass="BaseHeaderPlaceButton" customModule="CityGuideApp" customModuleProvider="target">
+                            <rect key="frame" x="248.5" y="0.0" width="82.5" height="50"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zee-tJ-Vjm" customClass="BaseHeaderPlaceButton" customModule="CityGuideApp" customModuleProvider="target">
+                            <rect key="frame" x="165.5" y="0.0" width="83" height="50"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ND8-6B-fYe" customClass="BaseHeaderPlaceButton" customModule="CityGuideApp" customModuleProvider="target">
+                            <rect key="frame" x="83" y="0.0" width="82.5" height="50"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Ns-bU-QlP" customClass="BaseHeaderPlaceButton" customModule="CityGuideApp" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="83" height="50"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Zee-tJ-Vjm" firstAttribute="leading" secondItem="ND8-6B-fYe" secondAttribute="trailing" id="0xb-3D-s9p"/>
+                        <constraint firstItem="RwB-lW-JgS" firstAttribute="leading" secondItem="Zee-tJ-Vjm" secondAttribute="trailing" id="63z-vJ-ZIN"/>
+                        <constraint firstAttribute="bottom" secondItem="RwB-lW-JgS" secondAttribute="bottom" id="7YR-Zp-6Mm"/>
+                        <constraint firstItem="ND8-6B-fYe" firstAttribute="width" secondItem="2Ns-bU-QlP" secondAttribute="width" id="8cv-f3-TW6"/>
+                        <constraint firstItem="ND8-6B-fYe" firstAttribute="top" secondItem="9XX-b3-8fQ" secondAttribute="top" id="Auk-XS-akH"/>
+                        <constraint firstItem="Zee-tJ-Vjm" firstAttribute="width" secondItem="2Ns-bU-QlP" secondAttribute="width" id="JJo-jv-Nui"/>
+                        <constraint firstAttribute="bottom" secondItem="2Ns-bU-QlP" secondAttribute="bottom" id="LEd-jH-aku"/>
+                        <constraint firstItem="9Kh-63-5yb" firstAttribute="leading" secondItem="RwB-lW-JgS" secondAttribute="trailing" id="LMv-Pa-Bwq"/>
+                        <constraint firstItem="2Ns-bU-QlP" firstAttribute="top" secondItem="9XX-b3-8fQ" secondAttribute="top" id="Mgs-k8-lUh"/>
+                        <constraint firstAttribute="bottom" secondItem="9Kh-63-5yb" secondAttribute="bottom" id="SI6-Sf-Xn4"/>
+                        <constraint firstItem="9Kh-63-5yb" firstAttribute="width" secondItem="2Ns-bU-QlP" secondAttribute="width" id="bHa-68-WCm"/>
+                        <constraint firstAttribute="trailing" secondItem="9Kh-63-5yb" secondAttribute="trailing" id="cyy-tT-aew"/>
+                        <constraint firstAttribute="bottom" secondItem="Zee-tJ-Vjm" secondAttribute="bottom" id="g6R-Ur-Gff"/>
+                        <constraint firstItem="RwB-lW-JgS" firstAttribute="top" secondItem="9XX-b3-8fQ" secondAttribute="top" id="gkE-7x-nvJ"/>
+                        <constraint firstItem="RwB-lW-JgS" firstAttribute="width" secondItem="2Ns-bU-QlP" secondAttribute="width" id="hil-sE-8YJ"/>
+                        <constraint firstItem="ND8-6B-fYe" firstAttribute="leading" secondItem="2Ns-bU-QlP" secondAttribute="trailing" id="k2H-N2-XGB"/>
+                        <constraint firstAttribute="bottom" secondItem="ND8-6B-fYe" secondAttribute="bottom" id="nEy-C4-maX"/>
+                        <constraint firstItem="9Kh-63-5yb" firstAttribute="top" secondItem="9XX-b3-8fQ" secondAttribute="top" id="oBD-Wn-tT1"/>
+                        <constraint firstItem="2Ns-bU-QlP" firstAttribute="leading" secondItem="9XX-b3-8fQ" secondAttribute="leading" id="vWp-RK-r39"/>
+                        <constraint firstItem="Zee-tJ-Vjm" firstAttribute="top" secondItem="9XX-b3-8fQ" secondAttribute="top" id="xLd-VZ-FTY"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="9XX-b3-8fQ" secondAttribute="trailing" id="EfZ-KC-Dr1"/>
+                <constraint firstAttribute="bottom" secondItem="9XX-b3-8fQ" secondAttribute="bottom" id="bXm-5t-JLf"/>
+                <constraint firstItem="9XX-b3-8fQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="tyr-pB-cyJ"/>
+                <constraint firstItem="9XX-b3-8fQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="uip-yw-KsP"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="103.79464285714285"/>
+        </view>
+    </objects>
+</document>

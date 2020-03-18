@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BaseButton" customModule="CityGuideApp" customModuleProvider="target">
+            <connections>
+                <outlet property="btnButton" destination="jcP-Nk-7Q2" id="yRE-Uz-maa"/>
+                <outlet property="vContainer" destination="cNB-qL-QOl" id="KW2-Tv-HPV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cNB-qL-QOl">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcP-Nk-7Q2">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <state key="normal" title="Button">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="onBtn:" destination="-1" eventType="touchUpInside" id="jXd-Y5-xO7"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="jcP-Nk-7Q2" secondAttribute="bottom" id="HiC-dD-3pr"/>
+                        <constraint firstItem="jcP-Nk-7Q2" firstAttribute="top" secondItem="cNB-qL-QOl" secondAttribute="top" id="N4z-lK-y0Y"/>
+                        <constraint firstItem="jcP-Nk-7Q2" firstAttribute="leading" secondItem="cNB-qL-QOl" secondAttribute="leading" id="YqU-ck-sAf"/>
+                        <constraint firstAttribute="trailing" secondItem="jcP-Nk-7Q2" secondAttribute="trailing" id="jp8-dI-ezI"/>
+                        <constraint firstItem="jcP-Nk-7Q2" firstAttribute="centerY" secondItem="cNB-qL-QOl" secondAttribute="centerY" id="jzg-8v-GiJ"/>
+                        <constraint firstItem="jcP-Nk-7Q2" firstAttribute="centerX" secondItem="cNB-qL-QOl" secondAttribute="centerX" id="rHX-fx-Phm"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                            <size key="value" width="0.0" height="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="0.75"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="cNB-qL-QOl" secondAttribute="bottom" id="H6K-oE-LUD"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="cNB-qL-QOl" secondAttribute="trailing" id="YUa-xy-qZS"/>
+                <constraint firstItem="cNB-qL-QOl" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="fXC-uU-nCP"/>
+                <constraint firstItem="cNB-qL-QOl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="khA-Xu-A7i"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="133.92857142857142"/>
+        </view>
+    </objects>
+</document>

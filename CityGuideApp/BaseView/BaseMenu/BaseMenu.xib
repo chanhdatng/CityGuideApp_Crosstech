@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BaseMenu" customModule="CityGuideApp" customModuleProvider="target">
+            <connections>
+                <outlet property="bHome" destination="ps0-u7-7sU" id="qH6-pB-zmu"/>
+                <outlet property="bMap" destination="6Jt-hA-R27" id="EWv-ho-Lij"/>
+                <outlet property="bSetting" destination="bgz-Mk-Oo8" id="Tl4-nY-cF3"/>
+                <outlet property="bUser" destination="W9K-i4-Y9z" id="zD4-5V-EV8"/>
+                <outlet property="stvMenu" destination="5BY-6Y-tbs" id="GG1-KM-rOB"/>
+                <outlet property="vContainer" destination="iN0-l3-epB" id="ZcX-v5-jtA"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RoundedCornerView" customModule="CityGuideApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="5BY-6Y-tbs">
+                    <rect key="frame" x="42" y="17.5" width="330" height="45"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ps0-u7-7sU" customClass="BaseButtonMenu" customModule="CityGuideApp" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="45" id="NVc-yN-L5g"/>
+                                <constraint firstAttribute="height" constant="45" id="hri-jg-IO6"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Jt-hA-R27" customClass="BaseButtonMenu" customModule="CityGuideApp" customModuleProvider="target">
+                            <rect key="frame" x="95" y="0.0" width="45" height="45"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="45" id="XXM-Nf-bQ6"/>
+                                <constraint firstAttribute="height" constant="45" id="dHH-ZQ-YBE"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W9K-i4-Y9z" customClass="BaseButtonMenu" customModule="CityGuideApp" customModuleProvider="target">
+                            <rect key="frame" x="190" y="0.0" width="45" height="45"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="4Ki-gQ-OAP"/>
+                                <constraint firstAttribute="width" constant="45" id="Aki-he-Tzj"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bgz-Mk-Oo8" customClass="BaseButtonMenu" customModule="CityGuideApp" customModuleProvider="target">
+                            <rect key="frame" x="285" y="0.0" width="45" height="45"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="45" id="PJ5-pk-ymF"/>
+                                <constraint firstAttribute="height" constant="45" id="dBD-CM-zW5"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="0.44313725490196076" green="0.58431372549019611" blue="0.28235294117647058" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="5BY-6Y-tbs" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ous-mv-YNF"/>
+                <constraint firstItem="5BY-6Y-tbs" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="w8G-g3-W0k"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="47.826086956521742" y="34.821428571428569"/>
+        </view>
+    </objects>
+</document>

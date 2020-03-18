@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BaseHeaderPlaceButton" customModule="CityGuideApp" customModuleProvider="target">
+            <connections>
+                <outlet property="btnButton" destination="8IB-Wy-9KE" id="Ydf-te-fTt"/>
+                <outlet property="imvButton" destination="w7v-O8-H3f" id="7rp-Ia-aby"/>
+                <outlet property="vContainer" destination="XF8-NG-edy" id="wHv-Ko-I15"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="83" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XF8-NG-edy">
+                    <rect key="frame" x="0.0" y="0.0" width="83" height="50"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="w7v-O8-H3f">
+                            <rect key="frame" x="26.5" y="0.0" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="w7v-O8-H3f" secondAttribute="height" multiplier="1:1" id="BZC-0b-cwb"/>
+                                <constraint firstAttribute="height" constant="30" id="ZVW-BE-c5x"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8IB-Wy-9KE">
+                            <rect key="frame" x="17" y="25" width="49" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="Upload">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="onBtnButton:" destination="-1" eventType="touchUpInside" id="SJS-VN-LxF"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="w7v-O8-H3f" firstAttribute="centerX" secondItem="XF8-NG-edy" secondAttribute="centerX" id="B9K-BS-ic4"/>
+                        <constraint firstItem="8IB-Wy-9KE" firstAttribute="top" secondItem="w7v-O8-H3f" secondAttribute="bottom" constant="-5" id="V2P-1V-cBm"/>
+                        <constraint firstItem="8IB-Wy-9KE" firstAttribute="centerX" secondItem="XF8-NG-edy" secondAttribute="centerX" id="XSE-gL-ErK"/>
+                        <constraint firstItem="w7v-O8-H3f" firstAttribute="top" secondItem="XF8-NG-edy" secondAttribute="top" id="m4s-Po-vdX"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="XF8-NG-edy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="B8a-Pv-v4r"/>
+                <constraint firstAttribute="bottom" secondItem="XF8-NG-edy" secondAttribute="bottom" id="eXs-k2-xBN"/>
+                <constraint firstAttribute="trailing" secondItem="XF8-NG-edy" secondAttribute="trailing" id="sI4-17-lBA"/>
+                <constraint firstItem="XF8-NG-edy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="y9T-eC-9RI"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>
